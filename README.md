@@ -1,22 +1,51 @@
-Password Strength Analyzer & Wordlist Generator
+# 🔐 Password Strength Analyzer & Custom Wordlist Generator
 
-A Python GUI tool to:
-- Analyze password strength using `zxcvbn`
-- Generate wordlists from personal inputs (name, pet, DOB, etc.)
-- Export custom wordlists as `.txt` files
+A Python-based GUI application that analyzes password strength using [zxcvbn](https://github.com/dropbox/zxcvbn) and generates a custom wordlist based on user-specific details. Designed for cybersecurity practitioners, ethical hackers, and privacy-conscious users.
 
-How to Run
+![GUI Preview](preview.png) <!-- Optional: Add screenshot if available -->
 
-Using Python
-1. Clone the repo.
-2. Run `pip install -r requirements.txt`
-3. Run `python password_tool.py`
+---
 
-Using EXE
-1. Go to `dist/`
-2. Double-click `password_tool.exe` (no Python required)
+## 📦 Features
 
-Screenshot
-screenshot.png
+### ✅ Password Strength Analyzer
+- Real-time analysis using Dropbox’s `zxcvbn` algorithm
+- **Live color-coded meter**:
+  - 🔴 Very Weak
+  - 🟥 Weak
+  - 🟧 Fair
+  - 🟩 Strong
+  - 🟢 Very Strong
 
-Made with 💻 Python + Tkinter
+### 🛠️ Wordlist Generator
+Generates targeted wordlists using:
+- Name
+- Date of Birth
+- Pet’s Name
+- Phone Number
+- Idol’s Name
+- Parent’s Name
+- Child’s Name
+- Spouse’s Name
+- Hometown
+
+🔁 Includes permutations, leetspeak substitutions, appended numbers, and year combos.
+
+### 📤 Export
+- Wordlist saved as `.txt` file (ready for password auditing or testing)
+
+---
+
+## 🖥️ How to Use
+
+### 🔗 From Executable (Windows Users)
+1. Go to the [Releases](https://github.com/bristowxavierlm/password-tool/releases) page.
+2. Download `password_tool.exe`.
+3. Double-click to run. No installation required.
+
+### 💻 From Source (Python)
+#### Requirements
+- Python 3.7+
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
